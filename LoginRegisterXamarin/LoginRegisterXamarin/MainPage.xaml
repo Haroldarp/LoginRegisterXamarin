@@ -7,4 +7,5 @@
             BarBackgroundColor="#DA0015">
 
     <local:LoginPage Title="Login" IconImageSource="human.png"/>
+    <local:RegisterPage Title="Register" IconImageSource="home.png"/>
 </TabbedPage>

@@ -10,16 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace LoginRegisterXamarin
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LoginPage : ContentPage
+    public partial class RegisterPage : ContentPage
     {
-        public LoginPage()
+        public RegisterPage()
         {
             InitializeComponent();
-        }
-
-        async private void Validation(object sender, EventArgs e)
-        {
-           
         }
     }
 }
