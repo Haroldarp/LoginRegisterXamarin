@@ -19,6 +19,6 @@
         <Entry x:Name="emailEntry" Placeholder="Email" Grid.Column="0" Grid.Row="2"/>
         <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True" Grid.Column="0" Grid.Row="3"/>
         <Entry x:Name="confirmPasswordEntry" Placeholder="Password" IsPassword="True" Grid.Column="0" Grid.Row="4"/>
-        <Button  Grid.Column="0" Grid.Row="5" Text="Register" BackgroundColor="#DA0015" TextColor="White"/>
+        <Button Clicked="Validation" Grid.Column="0" Grid.Row="5" Text="Register" BackgroundColor="#DA0015" TextColor="White"/>
     </Grid>
 </ContentPage>
