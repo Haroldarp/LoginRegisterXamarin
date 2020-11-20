@@ -16,10 +16,25 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="MasterDetailHomePage.xaml.cs">
+      <DependentUpon>MasterDetailHomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="TabbedHomePage.xaml.cs">
+      <DependentUpon>TabbedHomePage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="LoginPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="MasterDetailHomePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="RegisterPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TabbedHomePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

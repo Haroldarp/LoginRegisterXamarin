@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginRegisterXamarin.MasterDetailHomePage"
+                  Title="Master Detail Page">
+    <MasterDetailPage.Master>
+        <ContentPage  Title="Menu">
+            <StackLayout VerticalOptions="CenterAndExpand" Margin="10">
+                <Button Text="Home" BackgroundColor="#DA0015" TextColor="White"/>
+                <Button Text="Option 1" BackgroundColor="#DA0015" TextColor="White"/>
+                <Button Text="Option 2" BackgroundColor="#DA0015" TextColor="White"/>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage BarBackgroundColor="#DA0015">
+            <x:Arguments>
+                <ContentPage BackgroundColor="White">
+                    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                        <Label Text="Home page con MasterDetailPage"/>
+                    </StackLayout>
+                </ContentPage>
+            </x:Arguments>
+        </NavigationPage>
+
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

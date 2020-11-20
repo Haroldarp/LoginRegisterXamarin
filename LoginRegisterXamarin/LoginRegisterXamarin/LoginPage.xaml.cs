@@ -28,5 +28,20 @@ namespace LoginRegisterXamarin
                 await DisplayAlert("Bienvenido", $"Hola {emailEntry.Text}!", "Ok");
             }
         }
+
+        async private void RegisterPageLink(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RegisterPage());
+        }
+
+        async private void MasterDetailHomePageLink(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MasterDetailHomePage());
+        }
+
+        async private void TabbedHomePageLink(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new TabbedHomePage());
+        }
     }
 }

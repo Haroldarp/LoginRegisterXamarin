@@ -1,9 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LoginRegisterXamarin.LoginPage">
-    <Grid Margin="10,30,10,10" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" BackgroundColor="White">
+             x:Class="LoginRegisterXamarin.LoginPage"
+             Title="Xamarin example"
+              BackgroundColor="White">
+    <Grid Margin="10,30,10,10" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand">
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -12,11 +15,17 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Image Source="logo.png" Grid.Column="0" Grid.Row="0" HeightRequest="150"></Image>
-        <Entry x:Name="emailEntry" Placeholder="Email" Grid.Column="0" Grid.Row="1"/>
-        <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True" Grid.Column="0" Grid.Row="2"/>
-        <Button Clicked="Validation"  Grid.Column="0" Grid.Row="3" Text="Login" BackgroundColor="#DA0015" TextColor="White"/>
-        <Button Text="Registro" Grid.Column="0" Grid.Row="4" HorizontalOptions="Center"/>
+        <Image Source="logo.png" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="0" HeightRequest="150"></Image>
+        <Entry x:Name="emailEntry" Placeholder="Email" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="1"/>
+        <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="2"/>
+        <Button Clicked="Validation" Grid.ColumnSpan="2"  Grid.Column="0" Grid.Row="3" Text="Login" BackgroundColor="#DA0015" TextColor="White"/>
+        <Button Clicked="RegisterPageLink" Text="Registro" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="4" 
+                BackgroundColor="white" TextColor="#DA0015" HorizontalOptions="Center"/>
+        <Button Clicked="MasterDetailHomePageLink" Text="Master Detail Home" Grid.Column="0" Grid.Row="5" 
+                BackgroundColor="white" TextColor="#DA0015" HorizontalOptions="Center"/>
+        <Button Clicked="TabbedHomePageLink" Text="Tabbed Home"  Grid.Column="1" Grid.Row="5" 
+                BackgroundColor="white" TextColor="#DA0015" HorizontalOptions="Center"/>
     </Grid>
 </ContentPage>

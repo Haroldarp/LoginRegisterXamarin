@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LoginRegisterXamarin.RegisterPage">
+             x:Class="LoginRegisterXamarin.RegisterPage"
+             BackgroundColor ="White"
+             Title="Register">
     <Grid Margin="10,30,10,10" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" BackgroundColor="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>

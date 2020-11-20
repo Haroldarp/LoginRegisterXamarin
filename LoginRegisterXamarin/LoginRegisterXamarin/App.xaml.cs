@@ -10,7 +10,7 @@ namespace LoginRegisterXamarin
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new LoginPage()) { BarBackgroundColor = Color.FromHex("DA0015") };
         }
 
         protected override void OnStart()

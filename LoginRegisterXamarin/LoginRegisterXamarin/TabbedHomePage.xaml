@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginRegisterXamarin.TabbedHomePage"
+            BackgroundColor="White"
+            BarBackgroundColor="#DA0015"
+            Title="Tabbed Page">
+    <ContentPage Title="Home" IconImageSource="home.png">
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Label Text="Home page con TabbedPage Home"/>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Option 1" IconImageSource="human.png">
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Label Text="Home page con TabbedPage Option 1"/>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Option 2" IconImageSource="home.png">
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Label Text="Home page con TabbedPage Option 2"/>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>
